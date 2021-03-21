@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { useFrame, MeshProps } from 'react-three-fiber'
 import { Mesh } from 'three'
 
-function Box(props: MeshProps) {
+const Box = (props: MeshProps): JSX.Element => {
   const mesh = useRef() as Mesh
   const [hovered, setHover] = useState(false)
   const [active, setActive] = useState(false)

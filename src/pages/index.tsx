@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPage } from 'next'
 import { Canvas } from 'react-three-fiber'
-import Box from '@/components/box'
+import Box from '@/components/Box'
 import Demo from 'styles/Demo.module.scss'
 
 const Home: NextPage = () => {
