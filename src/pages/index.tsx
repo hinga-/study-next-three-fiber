@@ -3,7 +3,6 @@ import { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import { Canvas } from '@react-three/fiber'
 import Demo from 'styles/Demo.module.scss'
-// import {OrbitControls} from '@react-three/drei'
 
 const DancingModel = dynamic(() => import('@/components/DancingModel'), {
   ssr: false,
@@ -33,7 +32,6 @@ const Home: NextPage = () => {
         <Suspense fallback={null}>
           <DancingModel position={[0, -2, 0]} />
         </Suspense>
-        {/* <OrbitControls /> */}
       </Canvas>
     </div>
   )
